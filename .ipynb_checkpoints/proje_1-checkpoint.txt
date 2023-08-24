@@ -1,0 +1,28 @@
+Insertion Sort
+Soru 1: [22,27,16,2,18,6] -> Insertion Sort
+
+Yukarı verilen dizinin sort türüne göre aşamalarını yazınız.
+
+Cevap 1:Dizinin ilk elemanını alıp 'sıralı kısım' haline getirilir. Kalan elemanlar bu sıralı kısımda sağ ve sol olarak uygun yere getirilir.
+
+      SIRALI KISIM            SIRASIZ KISIM
+          [22]             [27, 16, 2, 18, 6]
+        [22, 27]             [16, 2, 18, 6]
+      [16, 22, 27]             [2, 18, 6]
+    [2, 16, 22, 27]              [18,6]
+   [2, 16,18, 22, 27]              [6]
+ [2, 6, 16, 18, 22, 27]            [ ]
+
+Big-O gösterimini yazınız : o(n)
+Time Complexity: Dizi sıralandıktan sonra 18 sayısı aşağıdaki case'lerden hangisinin kapsamına girer? Yazınız.
+
+1. Average case: Aradığımız sayının ortada olması
+
+Soru 2: [7,3,5,8,2,9,4,15,6] dizisinin Selection Sort'a göre ilk 4 adımını yazınız.
+
+Cevap 4:
+
+1. [7, 3*, 5, 8, 2, 9, 4, 15, 6] -> [3, 7, 5, 8, 2, 9, 4, 15, 6]
+2. [3, 7, 5*, 8, 2, 9, 4, 15, 6] -> [3, 5, 7, 8, 2, 9, 4, 15, 6]
+3. [3, 5, 7, 8*, 2, 9, 4, 15, 6] -> [3, 5, 7, 8, 2, 9, 4, 15, 6]
+4. [3, 5, 7, 8, 2*, 9, 4, 15, 6] -> [2, 3, 5, 7, 8, 9, 4, 15, 6]
